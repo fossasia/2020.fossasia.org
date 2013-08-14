@@ -1,0 +1,13 @@
+.aiwidgetscss{padding:0px}
+.aiwidgetscss a {color:#333; text-decoration:none}
+.aiwidgetscss a:hover{color:#CFF; text-decoration:underline}
+.aiwidgetscss h1{color:#CCC;font-size:18px;}
+.aiwidgetscss span a{color:#333;}
+.aiwidgetscss span a:hover{color:#CCF;}
+.imgdisplay{border-bottom-color: #CCCCCC;display: block;margin-bottom: 30px;}
+.tweettxts {overflow:hidden; line-height:18px;}
+.tweettext {}
+.tweetlink {font-size:11px; padding-top:5px;}
+	.aiwidgetscss .tweetlink a {color:#999}
+.imgalign {float:left; margin-right:10px;}
+.aiwidget-title {font-weight:bold; padding-bottom:15px;}
