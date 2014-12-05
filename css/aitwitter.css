@@ -1,0 +1,20 @@
+.aiwidgetscss{ padding:0px; }
+.aiwidgetscss a {text-decoration:none}
+.tweetlink {font-size:11px; padding-top:5px;}
+.imgalign {float:left; margin-right:10px; opacity:1;}
+.imgalign:hover {opacity: 0.5;}
+.aiwidget-title {font-weight:bold; padding-bottom:15px;}
+.tweettext, .widget .tweettext { color:#333; }
+.tweettext a, .widget .tweettext a { color:#0088cc; }
+.tweettext a:hover, .widget .tweettext a:hover { color:#555; text-decoration: underline;; }
+.tweettxts, .widget .tweettxts {overflow:hidden; line-height:18px; }
+.imgdisplay{border-bottom-color: #CCCCCC;display: block;margin-bottom: 30px;}
+.aiwidgetscss h1{color:#CCC;font-size:18px;}
+.aiwidgetscss .tweet_author_name a, .widget .tweet_author_name a { color:#333; font-weight: bold; font-size:16px;}
+.aiwidgetscss .tweet_author_name a:hover, .widget .tweet_author_name a:hover { color:#777; text-decoration: none; }
+.aiwidgetscss .tweet_author_heading a, .widget .tweet_author_heading a { color:#999; text-decoration: none; }
+.aiwidgetscss .tweet_author_heading a:hover, .widget .tweet_author_heading a:hover { color:#333; text-decoration: none; }
+.aiwidgetscss .tweet_author a, .widget .tweet_author a { color:#c1c1c1; font-size:14px; }
+.aiwidgetscss .tweet_author a:hover, .widget .tweet_author a:hover { color:#333; text-decoration: none; }
+.aiwidgetscss .tweetlink a, .widget .tweetlink a { color:#c1c1c1; font-size:11px; }
+.aiwidgetscss .tweetlink a:hover, .widget .tweetlink a:hover { color:#777; text-decoration: none; } 
