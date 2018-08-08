@@ -24,6 +24,10 @@
 /*!
 // 1. Useful Mixins
 // --------------------------------------------------*/
+.partner-logo {
+  max-width: 25%;
+}
+
 .vertical-align {
   position: relative;
   top: 50%;
@@ -550,6 +554,14 @@ nav .container {
   margin-top: -2px;
   -webkit-transition: all 0.3s;
 }
+.projects{
+   min-height:525px;
+}
+
+.events{
+   min-height: 450px;
+}
+
 .nav-dropdown li:first-child {
   margin-top: -1px;
 }
@@ -829,6 +841,8 @@ nav .container {
     display: block;
     margin-top: 67px;
     margin-right: 0px;
+    max-height: 75vh; 
+    overflow-y: scroll;
   }
   nav .social-link {
     float: left !important;
@@ -849,7 +863,9 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 439px; 
+    height: 600px; 
+    margin-top: 5px;
+    padding-bottom: 8px;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
@@ -857,10 +873,19 @@ nav .container {
   .has-dropdown:before {
     color: #333333;
   }
+  .nav-dropdown li {
+    padding-bottom: 9px !important;
+  }
 }
 /*!
 // 8. Sliders & Dividers & Headers
 // --------------------------------------------------*/
+.item p.summary img {
+  margin: auto;
+}
+.carousel-inner>.item {
+  padding: 40px 60px !important;
+}
 .hero-slider {
   padding: 0px;
   position: relative;
@@ -907,9 +932,16 @@ nav .container {
 }
 @media all and (max-width: 767px) {
   .hero-slider .btn-hollow {
-    display: none;
+    display: inline-block;
   }
 }
+
+@media all and (max-width: 480px) {
+  .hero-slider .btn-hollow {
+    margin: 5px auto auto auto;
+  }
+}
+
 .register-header form.register {
   padding-top: 0px;
   background: rgba(0, 0, 0, 0.4);
@@ -1162,6 +1194,18 @@ nav .container {
 }
 .call-to-action .social_twitter {
   background-color: #00aced;
+}
+.call-to-action .social_googleplus {
+  background-color: #d34836;
+}
+.call-to-action .social_linkedin {
+  background-color: #0077B5;
+}
+.call-to-action .social_pinterest {
+  background-color: #BD081C;
+}
+.call-to-action .social_tumblr {
+  background-color: #35465c;
 }
 .call-to-action a:last-of-type i {
   margin-right: 0px;
@@ -2035,18 +2079,19 @@ p.question {
 }
 .sponsor {
   margin-bottom: 36px;
-  height: 80px;
+  height: 110px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 150px;
+  max-width: 170px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 80px;
+  max-height: 100px;
 }
 .sponsors span {
   display: inline-block;
+  margin-top: 24px;
 }
 .sponsors span a {
   color: #e12b00;
