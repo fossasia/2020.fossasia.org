@@ -1,3 +1,5 @@
-Site for 2018.fossasia.org Summit
+Site for 2019.fossasia.org Summit
 
-http://2018.fossasia.org
+March 14-17, 2019 at Lifelong Learning Institute, Singapore
+
+https://2019.fossasia.org

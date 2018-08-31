@@ -226,6 +226,34 @@ $(document).ready(function() {
         return false;
     });
 
+    /************** Speaker Bio tooltip script **************/
+    $('.speaker-column').on("mouseover", function(){
+
+        var parentRef = $(this).parent();
+        var tooltipRef = $(this).children('.speaker-bio-tooltip');
+        var tooltipPinRef = $(this).children('.speaker-bio-tooltip-pin');
+
+        // Calculate offset
+        var currentDivPos = $(this).position();    
+        var parentDivPos = parentRef.position();  
+        var left = -1 * (currentDivPos.left - parentDivPos.left ) + "px";
+
+        tooltipPinRef.css('display','block');
+        tooltipRef.css({
+            'width':parentRef.width(),
+            'left':left
+        }).slideDown(100);
+    });
+
+    $('.speaker-column').on("mouseleave", function(){
+
+        $(this).children('.speaker-bio-tooltip-pin').css('display','none');
+        $(this).children('.speaker-bio-tooltip').css('display','none');
+
+    })
+
+
+
 });
 
 $(window).load(function() {
@@ -327,10 +355,11 @@ $(window).load(function() {
 
 	$('.email-subscribe').submit(function() {
         if ($.trim($("#email").val()) === "") {
-        alert('Please enter your email address in the form');
-        return false; }
+            alert('Please enter your email address in the form');
+            return false; 
+        }
         else if ( !isValidEmailAddress( $.trim($("#email").val())  ) ) {
-        alert("Not a valid email address");
-        return false;
-    }
+            alert("Not a valid email address");
+            return false;
+        }   
 });

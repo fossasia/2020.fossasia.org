@@ -7,22 +7,22 @@
   height: 100%;
   top: 0;
   left: 0;
-  
+
 }
 .schedule a {
-  color: red;
+  color: #B82300;
   border: none;
 }
 
 .schedule a:hover {
-  color: red;
+  color: #B82300;
   text-decoration: none;
   border: none;
 }
 
 .schedule a:active {
   color: red;
-  text-decoration: underline; 
+  text-decoration: underline;
   border: none;
 }
 
@@ -38,7 +38,7 @@
   font-size: 20px;
   transition: opacity 0.2s linear;
   margin-bottom: 20px;
-  height: 250px;
+  height: auto;
 }
 
 .tweets-feed a {
@@ -88,16 +88,16 @@
   color: grey;
 }
 .sticky-nav .menu li a:hover {
-  border-color: #C3BFBF;
-  border-bottom-width: 2px;
-  margin-bottom: 2px;
+  /*border-color: #C3BFBF;*/
 }
 
 .sidebar-content .widget ul li a:hover{
-  border-color: #C3BFBF;
-  border-bottom-width: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  /*border-color: #C3BFBF;*/
+  /*margin-top: 2px;*/
+}
+a:focus, a:hover {
+    color: #9fab9e;
+    text-decoration:none;
 }
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
 .appear{
@@ -117,13 +117,49 @@
 #overlay{
   padding: 0
 }
+
+/*css classes for speaker bio on tooltip*/
+.speaker-bio-tooltip{
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    background: #b82300;
+    z-index: 1000;
+    overflow: visible !important;
+}
+
+.speaker-bio-tooltip-pin{
+    position: absolute;
+    display: none;
+    z-index: 20;
+    background: url(../img/pin_bg.png) left top no-repeat;
+    width: 26px;
+    height: 13px;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+    top: 100%;
+}
+
+.speaker-bio-tooltip .speaker-bio-tooltip-content {
+    color: #fff;
+    padding: 35px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.speaker-bio-tooltip-content a{
+    color: yellow !important;
+    border-color: yellow;
+}
+
+/*css classes for speaker bio on tooltip*/
+
 /*END*/
 
 /* media queries to display social icons in footer properly*/
 @media (max-width: 768px) {
-  .social-profiles li a i {
-    position: absolute;
-  }
   .social_twitter {
     top: 0;
     left: 15%;
@@ -153,6 +189,63 @@
   .fa-github {
     top: 100%;
     left: 70%;
-    margin-top: 40px;
   }
+}
+.speaker-description.Felipe p {
+  line-height: 1.7;
+}
+
+.all-speakers img.background-image {
+  width: 100%;
+}
+.speaker-column {
+  min-height: 405px;
+}
+@media (max-width: 767px) {
+  .all-speakers .speaker {
+    max-width: 300px;
+    margin: auto;
+	width: auto;
+    text-align: center;
+  }
+  .speaker-column + .speaker-column {
+    margin-top: 36px;
+  }
+  .all-speakers .speakers-row + .speakers-row {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .speaker-outer:nth-child(odd) {
+    clear: left;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+
+.all-speakers .speaker {
+    max-width: 300px;
+    margin: auto;
+    width: auto;
+    text-align: center;
+  }	
+
+  nav .logo {
+    top: -18px;
+  }
+  .menu li {
+    margin-right: 27px;
+  }
+}
+
+.btn-hollow-red {
+  color: #e12b00 !important;
+  border: 2px solid #e12b00 !important;
+  background: transparent !important;
+}
+
+.btn-hollow-red:hover {
+    color: #fff !important;
+    background: #e12b00 !important;
 }
