@@ -7967,7 +7967,7 @@
                     </div>
                 </div>
             </div>
-            <div class="map-holder zoom-off col-md-6 col-sm-4">
+            <div class="map-holder col-md-6 col-sm-4 maps">
                 <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=103.8914528489113%2C1.3187927641225512%2C103.89350205659868%2C1.320457974155969&amp;layer=mapnik&amp;marker=1.3196253692786193%2C103.89247745275497"></iframe>
             </div>
         </section>
@@ -8099,8 +8099,6 @@
         <script src="js/scripts.js"></script>
         <script>
             $(document).ready(function () {
-                $('#map').addClass('scrolloff'); // set the mouse events to none when doc is ready
-
                 $('#overlay').on("mouseup", function () { // lock it when mouse up
                     $('#map').addClass('scrolloff');
                     //somehow the mouseup event doesn't get call...
@@ -8108,14 +8106,13 @@
                 $('#overlay').on("mousedown", function () { // when mouse down, set the mouse events free
                     $('#map').removeClass('scrolloff');
                 });
-                $("#map").mouseleave(function () { // becuase the mouse up doesn't work...
-                    $('#map').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
-                    // or you can do it on some other event
-                });
-
             });
-            $('.map-holder').click(function () {
-                $(this).removeClass('zoom-off');
+            // disable mouse control on map unless clicked
+            $('.maps').click(function () {
+                $('.maps iframe').css("pointer-events", "auto");
+            });
+            $(".maps").mouseleave(function () {
+                $('.maps iframe').css("pointer-events", "none");
             });
         </script>
 </body>
