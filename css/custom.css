@@ -249,3 +249,11 @@ a:focus, a:hover {
     color: #fff !important;
     background: #e12b00 !important;
 }
+
+.map-holder:before {
+  content: none;
+}
+
+.maps iframe {
+  pointer-events: none;
+}
