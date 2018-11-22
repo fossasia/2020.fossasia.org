@@ -24,6 +24,10 @@
 /*!
 // 1. Useful Mixins
 // --------------------------------------------------*/
+.partner-logo {
+  max-width: 25%;
+}
+
 .vertical-align {
   position: relative;
   top: 50%;
@@ -837,6 +841,8 @@ nav .container {
     display: block;
     margin-top: 67px;
     margin-right: 0px;
+    max-height: 75vh; 
+    overflow-y: scroll;
   }
   nav .social-link {
     float: left !important;
@@ -857,13 +863,18 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 600px; 
+    height: 600px; 
+    margin-top: 5px;
+    padding-bottom: 8px;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
   }
   .has-dropdown:before {
     color: #333333;
+  }
+  .nav-dropdown li {
+    padding-bottom: 9px !important;
   }
 }
 /*!
@@ -921,9 +932,16 @@ nav .container {
 }
 @media all and (max-width: 767px) {
   .hero-slider .btn-hollow {
-    display: none;
+    display: inline-block;
   }
 }
+
+@media all and (max-width: 480px) {
+  .hero-slider .btn-hollow {
+    margin: 5px auto auto auto;
+  }
+}
+
 .register-header form.register {
   padding-top: 0px;
   background: rgba(0, 0, 0, 0.4);
@@ -2061,15 +2079,15 @@ p.question {
 }
 .sponsor {
   margin-bottom: 36px;
-  height: 80px;
+  height: 110px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 150px;
+  max-width: 170px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 80px;
+  max-height: 100px;
 }
 .sponsors span {
   display: inline-block;
