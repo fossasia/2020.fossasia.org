@@ -544,10 +544,14 @@ nav .container {
   position: absolute;
   z-index: 1;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.6);
   min-width: 200px;
   overflow: hidden;
   margin-top: -2px;
+  margin-right: 100px;
+  max-width: 200px;
+  overflow-y: scroll;
+  transition: all 0.3s;
   -webkit-transition: all 0.3s;
 }
 .projects{
@@ -599,7 +603,7 @@ nav .container {
 
 .has-dropdown:hover .nav-dropdown {
   opacity: 1;
-  max-height: 300px;
+  max-height: 100px;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
@@ -808,7 +812,7 @@ nav .container {
   margin-bottom: 32px;
   left: 24px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 500px) {
   nav {
     max-height: 67px;
     overflow: hidden;
@@ -857,7 +861,8 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 600px; 
+    min-height: 200px; 
+    background: rgba(255, 255, 255, 0) !important;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
