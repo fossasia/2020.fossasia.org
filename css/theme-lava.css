@@ -270,7 +270,7 @@ h6 {
 h1 {
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 }
 h3 {
   font-size: 20px;
@@ -459,7 +459,7 @@ nav .logo {
   max-height: 45px;
   max-width: 110px;
   position: absolute;
-  top: -6px;
+  top: 0px;
   opacity: 1;
 }
 nav .text-right {
@@ -544,14 +544,10 @@ nav .container {
   position: absolute;
   z-index: 1;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.9);
   min-width: 200px;
   overflow: hidden;
   margin-top: -2px;
-  margin-right: 100px;
-  max-width: 200px;
-  overflow-y: scroll;
-  transition: all 0.3s;
   -webkit-transition: all 0.3s;
 }
 .projects{
@@ -603,7 +599,7 @@ nav .container {
 
 .has-dropdown:hover .nav-dropdown {
   opacity: 1;
-  max-height: 100px;
+  max-height: 300px;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
@@ -812,7 +808,7 @@ nav .container {
   margin-bottom: 32px;
   left: 24px;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
   nav {
     max-height: 67px;
     overflow: hidden;
@@ -861,8 +857,7 @@ nav .container {
   .nav-dropdown {
     position: relative;
     display: none;
-    min-height: 200px; 
-    background: rgba(255, 255, 255, 0) !important;
+    min-height: 600px;
  }
   .has-dropdown:hover .nav-dropdown {
     display: block;
