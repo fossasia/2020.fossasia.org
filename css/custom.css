@@ -141,8 +141,9 @@
 .background-image {
   width: 100%;
 }
-@media(max-width:768px){
-  .lightbox-gallery{
-    margin-top:10px;
+@media(max-width:768px)
+{
+.lightbox-gallery{
+   margin-top:10px;
   }
 }
