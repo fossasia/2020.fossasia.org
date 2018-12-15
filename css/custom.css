@@ -127,7 +127,12 @@
     height: 180vh;
   }
 }
-
+@media screen and (min-width: 769px) and (max-width: 989px)
+{
+  .color-blocks a{
+    padding: 15px 0px 15px 0px;
+  }
+}
 /*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
 .appear{
   display: block;
