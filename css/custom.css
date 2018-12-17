@@ -152,3 +152,8 @@
    margin-top:10px;
   }
 }
+@media screen and (max-width: 560px){
+  .price{
+    font-size: 10vw !important;
+  }
+}
