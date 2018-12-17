@@ -101,6 +101,13 @@
 .item .wp-post-image{
   height: auto;
 }
+.header-text:hover {
+  color: #C3BFBF !important;
+}
+.header-text:focus {
+  color: #fff;
+  text-decoration: none;
+}
 @media screen and (min-width: 350px) and (max-width: 440px)
 {
   #DevPrograms{
