@@ -164,3 +164,7 @@
     font-size: 10vw !important;
   }
 }
+.equal-row{
+  display: flex;
+  flex-wrap: wrap;
+}
