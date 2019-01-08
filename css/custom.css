@@ -108,6 +108,10 @@
   color: #fff;
   text-decoration: none;
 }
+.sub-heading-font
+{
+  font-size: 35px;
+}
 @media screen and (min-width: 350px) and (max-width: 440px)
 {
   #DevPrograms{
