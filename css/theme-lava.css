@@ -1498,7 +1498,7 @@ nav .container {
   margin-bottom: 36px;
 }
 .schedule-overview li {
-  padding: 24px;
+  padding: 24px 34px 24px 18px;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease-out;
