@@ -30,6 +30,25 @@
     <link href="css/theme-lava.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <script>
+       // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        }
+    </script>
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -49,7 +68,7 @@
 </head>
 
 <body class="no-loader">
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button> <!-- Go to top button -->
     <div class="loader">
         <div class="strip-holder">
             <div class="strip-1"></div>
@@ -69,7 +88,6 @@
                             <img alt="FOSSASIA" class="logo logo-dark" src="img/fossasia-dark.png">
                         </a>
                     </div>
-    
                     <div class="col-sm-10 text-right">
                         <ul class="menu">
                             <li>
