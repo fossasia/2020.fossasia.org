@@ -404,6 +404,22 @@ p a,
   border: 2px solid #e12b00;
   color: #e12b00;
 }
+@media all and (max-width: 768px) {
+    .btn {
+        display: block;
+        align-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+}
+    .btn-hollow {
+        display: block;
+        align-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
 .btn-hollow:hover {
   background: #e12b00;
 }
@@ -1225,6 +1241,14 @@ nav .container {
     -ms-transform: translateY(0px);
     transform: translateY(0px);
   }
+    .side-image {
+  padding: 70px 0px;
+  position: relative;
+  top: 0px;
+        height: 50%;
+        width: 100%;
+        margin-bottom: 50px;
+}
 }
 /*!
 // Promo Blocks
